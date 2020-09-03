@@ -1,0 +1,7 @@
+Please, read about https://micronaut-projects.github.io/micronaut-aws/latest/guide/index.html#lambda[Micronaut AWS Lambda Support] to learn more about different Lambda runtime, Triggers and Handlers and how to integrate with a Micronaut application.
+
+The biggest problem with Java applications and Lambda is how to mitigate Cold startups. Executing GraalVM Native images of a Micronaut function in a Lambda Custom runtime is a solution to this problem.
+
+If you want to respond to triggers such as queue events, s3 events or single endpoints you should opt to code your Micronaut functions as Serverless functions.
+
+In this guide, we are going to deploy a Micronaut function as a GraalVM Native image to a AWS Lambda custom runtime.

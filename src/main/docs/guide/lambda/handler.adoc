@@ -1,0 +1,11 @@
+The handler used is the one created at https://micronaut-projects.github.io/micronaut-aws/latest/api/io/micronaut/function/aws/runtime/MicronautLambdaRuntime.html[MicronautLambdaRuntime].
+
+Thus, you don't need specify the handler in the AWS Lambda console.
+
+However, I like to specify it in the console as well:
+
+`example.micronaut.BookRequestHandler`
+
+That value is exposed as an environment variable.
+
+image::handler.png[]
