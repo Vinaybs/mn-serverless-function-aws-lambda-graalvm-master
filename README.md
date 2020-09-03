@@ -1,4 +1,10 @@
-# Deploy a Micronaut application to AWS Lambda Java 11 Runtime
+## Feature aws-lambda-custom-runtime documentation
 
-Guide: http://guides.micronaut.io/mn-application-aws-lambda-java11/guide/index.html
+- [Micronaut Custom AWS Lambda runtime documentation](https://micronaut-projects.github.io/micronaut-aws/latest/guide/index.html#lambdaCustomRuntimes)
+
+- [https://docs.aws.amazon.com/lambda/latest/dg/runtimes-custom.html](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-custom.html)
+
+## Feature aws-lambda documentation
+
+- [Micronaut AWS Lambda Function documentation](https://micronaut-projects.github.io/micronaut-aws/latest/guide/index.html#lambda)
 

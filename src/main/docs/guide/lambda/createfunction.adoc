@@ -1,3 +1,0 @@
-Create a Lambda Function. As a runtime, select Java 11 (Correto).
-
-image:create-function.png[]
