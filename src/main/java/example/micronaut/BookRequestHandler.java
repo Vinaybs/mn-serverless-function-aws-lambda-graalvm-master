@@ -1,16 +1,26 @@
 package example.micronaut;
+
 import io.micronaut.core.annotation.Introspected;
 import io.micronaut.function.aws.MicronautRequestHandler;
-import java.util.UUID;
+
+import example.micronaut.dynamodb.IDynamoDBService;
+import example.micronaut.model.Student;
 
 @Introspected
-public class BookRequestHandler extends MicronautRequestHandler<Book, BookSaved> {  // <1>
+public class BookRequestHandler extends MicronautRequestHandler<Student, Student> { // <1>
 
-    @Override
-    public BookSaved execute(Book input) {
-        BookSaved bookSaved = new BookSaved();
-        bookSaved.setName(input.getName());
-        bookSaved.setIsbn(UUID.randomUUID().toString());
-        return bookSaved;
-    }
+	private IDynamoDBService dynamoDBService;
+
+	public BookRequestHandler() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public BookRequestHandler(IDynamoDBService dynamoDBService) {
+		this.dynamoDBService = dynamoDBService;
+	}
+
+	@Override
+	public Student execute(Student student) {
+		return dynamoDBService.save(student);
+	}
 }
