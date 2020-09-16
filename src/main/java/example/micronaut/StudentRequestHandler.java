@@ -7,15 +7,15 @@ import example.micronaut.dynamodb.IDynamoDBService;
 import example.micronaut.model.Student;
 
 @Introspected
-public class BookRequestHandler extends MicronautRequestHandler<Student, Student> { // <1>
+public class StudentRequestHandler extends MicronautRequestHandler<Student, Student> { // <1>
 
 	private IDynamoDBService dynamoDBService;
 
-	public BookRequestHandler() {
+	public StudentRequestHandler() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public BookRequestHandler(IDynamoDBService dynamoDBService) {
+	public StudentRequestHandler(IDynamoDBService dynamoDBService) {
 		this.dynamoDBService = dynamoDBService;
 	}
 
