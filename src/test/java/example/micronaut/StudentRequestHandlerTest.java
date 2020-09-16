@@ -12,19 +12,19 @@ public class StudentRequestHandlerTest {
 
 	private static StudentRequestHandler studentRequestHandler;
 
-	@BeforeAll
+	//@BeforeAll
 	public static void setupServer() {
 		studentRequestHandler = new StudentRequestHandler(); // <1>
 	}
 
-	@AfterAll
+	//@AfterAll
 	public static void stopServer() {
 		if (studentRequestHandler != null) {
 			studentRequestHandler.getApplicationContext().close(); // <2>
 		}
 	}
 
-	@Test
+	//@Test
 	public void testHandler() {
 		Student student = new Student();
 		student.setAge(20);
